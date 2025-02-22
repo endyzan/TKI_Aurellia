@@ -342,9 +342,9 @@ Anda sekarang memiliki:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=nama_database
-DB_USERNAME=username_database
-DB_PASSWORD=password_database
+DB_DATABASE=book_search
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 - php artisan migrate
 - php artisan db:seed --class=BookSeeder

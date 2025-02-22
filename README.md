@@ -319,3 +319,34 @@ Akses di browser: [http://localhost:8000/search](http://localhost:8000/search)
 Anda sekarang memiliki:
 - **Scrapy** untuk scraping data buku dari [books.toscrape.com](http://books.toscrape.com).
 - **Laravel** untuk menampilkan data dan melakukan pencarian real-time.
+
+
+
+
+
+
+
+
+
+
+## cara setup
+- buka laragon, start all, buka terminal
+- git clone https://github.com/endyzan/TKI_Aurellia.git
+- cd TKI_Aurellia
+- composer install
+- npm install
+- cp .env.example .env
+- php artisan key:generate
+- Edit file .env dan sesuaikan dengan konfigurasi database lokal pengguna
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=username_database
+DB_PASSWORD=password_database
+```
+- php artisan migrate
+- php artisan db:seed --class=BookSeeder
+- php artisan serve
+
